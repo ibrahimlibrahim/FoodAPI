@@ -1,6 +1,9 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-using System;
+using System.Reflection;
 using WebApi.Context;
+using WebApi.Entities;
+using WebApi.ValidationRules;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +18,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default"));
 });
+builder.Services.AddScoped<IValidator<Product>, ProductValidator>();
+//builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 
 

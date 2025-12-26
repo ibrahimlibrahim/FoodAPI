@@ -1,4 +1,4 @@
-﻿namespace WebApi.DTOs
+﻿namespace WebApi.DTOs.ContactDto
 {
     public record CreateContactDto(
                                    string MapLocation,

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Context;
-using WebApi.DTOs;
+using WebApi.DTOs.ContactDto;
 using WebApi.Entities;
 
 namespace WebApi.Controllers;
