@@ -20,7 +20,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 builder.Services.AddScoped<IValidator<Product>, ProductValidator>();
 //builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AllowNullCollections = true;
+    cfg.AllowNullDestinationValues = true;
+}, Assembly.GetExecutingAssembly());
 
 
 var app = builder.Build();
