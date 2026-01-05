@@ -19,7 +19,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default"));
 });
 builder.Services.AddScoped<IValidator<Product>, ProductValidator>();
-//builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddAutoMapper(cfg =>
 {
     cfg.AllowNullCollections = true;

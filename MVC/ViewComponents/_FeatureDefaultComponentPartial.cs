@@ -2,7 +2,7 @@
 
 namespace MVC.ViewCompanents;
 
-public class _HeadDefaultCompanentPartial : ViewComponent
+public class _FeatureDefaultComponentPartial : ViewComponent
 {
     public IViewComponentResult Invoke()
     {

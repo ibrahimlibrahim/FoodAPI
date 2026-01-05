@@ -2,7 +2,7 @@
 
 namespace MVC.ViewCompanents;
 
-public class _NavbarDefaultCompanentPartial : ViewComponent
+public class _NavbarDefaultComponentPartial : ViewComponent
 {
     public IViewComponentResult Invoke()
     {
